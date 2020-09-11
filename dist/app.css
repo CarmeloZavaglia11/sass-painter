@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+}
+
+header.container-full-width {
+  min-width: 100%;
+  height: 100px;
+  background-color: #101010;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top-header {
+  width: 30%;
+  height: 50%;
+}
+
+.contacts {
+  color: #989898;
+}
+
+.contacts ul li {
+  display: inline-block;
+}
+
+.contacts ul li span {
+  margin: 10px;
+}
+
+.contacts ul li i {
+  color: #009cff;
+  margin-right: 15px;
+}
+

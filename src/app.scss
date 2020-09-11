@@ -1,0 +1,66 @@
+// IMPORT
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/common';
+@import 'partials/header';
+
+// VARIABILI
+$header-width: 100%;
+$header-height: 100px;
+$header-bg-color: #101010;
+$top-header-width: 30%;
+$top-header-height: 50%;
+$header-contacts-color: #989898;
+$span-contacts-header-margin: 10px;
+$icon-header-color: #009cff;
+$icon-header-margin-rx: 15px;
+
+// MIXIN
+@mixin flex-top-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+// COMMON
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+}
+
+// HEADER
+
+header.container-full-width {
+    min-width: $header-width;
+    height: $header-height;
+    background-color: $header-bg-color;
+    @include flex-top-header;
+}
+
+.top-header {
+    width: $top-header-width;
+    height: $top-header-height;
+}
+
+.contacts {
+    color: $header-contacts-color;
+}
+
+.contacts ul li {
+    display: inline-block;
+}
+
+.contacts ul li span {
+    margin: $span-contacts-header-margin;
+}
+
+.contacts ul li i {
+    color: $icon-header-color;
+    margin-right: $icon-header-margin-rx;
+}
