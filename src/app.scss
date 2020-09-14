@@ -3,64 +3,63 @@
 @import 'partials/mixins';
 @import 'partials/common';
 @import 'partials/header';
+@import 'partials/main';
+@import 'partials/footer';
 
-// VARIABILI
-$header-width: 100%;
-$header-height: 100px;
-$header-bg-color: #101010;
-$top-header-width: 30%;
-$top-header-height: 50%;
-$header-contacts-color: #989898;
-$span-contacts-header-margin: 10px;
-$icon-header-color: #009cff;
-$icon-header-margin-rx: 15px;
+// MAIN
 
-// MIXIN
-@mixin flex-top-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.main {
+
+    @include img('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg',cover, center);
+    
+    .jumbo {
+        width: 56%;
+        height: 450px;
+        margin: $marg0auto;
+        @include flex(row,flex-end,center,nowrap);
+
+        .jumbo-left {
+            color: $white;
+            width: 45%;
+            height: 80%;
+            @include flex(column,space-between,flex-start,nowrap);
+
+            h2 {
+                font-size: 1.8em;
+                font-weight: $fontWeig400;
+            }
+
+            h3 {
+                font-size: 1.5em;
+                font-weight: $fontWeig400;
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
+            li {
+                margin-bottom: 10px;
+                font-weight: $fontWeig400;
+            }
+
+            span {
+                color: $grey;
+                margin: 5px;
+            }
+        }
+
+        .jumbo-right {
+            width: 35%;
+            height: 90%;
+            background-color: green;
+        }
+    }
+
 }
 
 
-// COMMON
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    min-height: 100%;
-}
 
-// HEADER
 
-header.container-full-width {
-    min-width: $header-width;
-    height: $header-height;
-    background-color: $header-bg-color;
-    @include flex-top-header;
-}
 
-.top-header {
-    width: $top-header-width;
-    height: $top-header-height;
-}
-
-.contacts {
-    color: $header-contacts-color;
-}
-
-.contacts ul li {
-    display: inline-block;
-}
-
-.contacts ul li span {
-    margin: $span-contacts-header-margin;
-}
-
-.contacts ul li i {
-    color: $icon-header-color;
-    margin-right: $icon-header-margin-rx;
-}

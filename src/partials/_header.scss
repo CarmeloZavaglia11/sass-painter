@@ -1,0 +1,66 @@
+// HEADER
+
+header {
+    background-color: $blackheader;
+
+    .header {
+        width: $cont60;
+        height: 100%;
+        margin: $marg0auto;
+
+        .top-header {
+            @include flex(row,flex-end,center,nowrap);
+            height: 50%;
+
+            .contacts {
+                width: 50%;
+                height: 100%;
+                @include flex(row,center,center,nowrap);
+
+                ul {
+                    list-style: none;
+                    @include flex(row,center,center,nowrap);
+
+                    li {
+                        color: $grey;
+                        padding: 10px;
+
+                        i {
+                            color: $blue;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    select {
+                        padding: 5px; 
+                    }
+                }
+            }
+        }
+
+        .bottom-header {
+            color: $white;
+            @include flex(row,flex-start,center,nowrap);
+            height: 50%;
+
+            .logo {
+                width: 10%;
+                height: 100%;
+                cursor: $cursorp;
+            }
+
+            .navbar {
+                @include flex(row,flex-start,center,nowrap);
+
+                ul {
+                    list-style: none;
+                    @include flex(row,center,center,nowrap);
+
+                    li {
+                        padding: 15px 25px;
+                    }
+                }
+            }
+        }
+    }
+}
