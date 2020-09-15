@@ -107,6 +107,7 @@ header .header .bottom-header .navbar ul li {
 }
 
 .main {
+  height: 450px;
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
   background-size: cover;
   background-position: center;
@@ -127,6 +128,7 @@ header .header .bottom-header .navbar ul li {
   color: white;
   width: 45%;
   height: 80%;
+  margin-right: 53px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -158,9 +160,351 @@ header .header .bottom-header .navbar ul li {
   margin: 5px;
 }
 
+.main .jumbo .jumbo-left button {
+  width: 200px;
+  color: white;
+  background-color: grey;
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.main .jumbo .jumbo-left button:hover {
+  opacity: 0.8;
+}
+
 .main .jumbo .jumbo-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
   width: 35%;
   height: 90%;
-  background-color: green;
+  background-color: #101010;
+  padding: 10px;
+}
+
+.main .jumbo .jumbo-right .jumbo-price {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 30%;
+  padding: 20px;
+}
+
+.main .jumbo .jumbo-right .jumbo-price .jumbo-money {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.main .jumbo .jumbo-right .jumbo-price .jumbo-money h3 {
+  color: white;
+  font-size: 1.5em;
+}
+
+.main .jumbo .jumbo-right .jumbo-price .jumbo-money h4 {
+  color: grey;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.main .jumbo .jumbo-right .jumbo-price button {
+  width: 50%;
+  color: white;
+  background-color: #009cff;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.main .jumbo .jumbo-right .jumbo-price button:hover {
+  opacity: 0.8;
+}
+
+.main .jumbo .jumbo-right .jumbo-limited {
+  margin: 90px auto;
+  width: 90%;
+  background-color: #e6e6e6;
+  padding: 10px;
+}
+
+.main .jumbo .jumbo-right .jumbo-limited h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.main .jumbo .jumbo-right .jumbo-limited p {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.main .jumbo .jumbo-right .jumbo-limited span {
+  font-size: 0.9em;
+}
+
+.main .jumbo .jumbo-right .jumbo-limited span a {
+  text-decoration: none;
+  color: #009cff;
+}
+
+.main .navbar-second {
+  height: 75px;
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.main .navbar-second .entry-navbar {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.main .navbar-second .entry-navbar ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.main .navbar-second .entry-navbar li {
+  font-size: 1.2em;
+  color: grey;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.main .navbar-second .entry-navbar li:hover {
+  color: #101010;
+  background-color: white;
+}
+
+.main .first-img-fixed {
+  height: 500px;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main section.container-full-width {
+  background-color: #222222;
+  padding: 75px 0;
+}
+
+.main section.container-full-width .painting-tool {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 2000px;
+  text-align: center;
+}
+
+.main section.container-full-width .painting-tool .flexible-photo {
+  width: 60%;
+}
+
+.main section.container-full-width .painting-tool .flexible-photo h2 {
+  font-size: 2.8em;
+  font-weight: 300;
+}
+
+.main section.container-full-width .painting-tool .flexible-photo p {
+  margin: 60px 0;
+}
+
+.main section.container-full-width .painting-tool .flexible-photo img {
+  max-width: 80%;
+  max-height: 60%;
+}
+
+.main section.container-full-width .painting-tool .blank-canvas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 60%;
+}
+
+.main section.container-full-width .painting-tool .blank-canvas .left-blank-canvas {
+  text-align: left;
+  width: 40%;
+  padding: 20px;
+}
+
+.main section.container-full-width .painting-tool .blank-canvas .left-blank-canvas h3 {
+  font-weight: 500;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.main section.container-full-width .painting-tool .blank-canvas .left-blank-canvas p {
+  font-weight: 400;
+}
+
+.main section.container-full-width .painting-tool .blank-canvas .right-black-canvas {
+  width: 60%;
+  padding: 20px;
+}
+
+.main section.container-full-width .painting-tool .blank-canvas .right-black-canvas img {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.main section.container-full-width .painting-tool .brushes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 60%;
+}
+
+.main section.container-full-width .painting-tool .brushes .left-brushes {
+  width: 60%;
+  padding: 20px;
+}
+
+.main section.container-full-width .painting-tool .brushes .left-brushes img {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.main section.container-full-width .painting-tool .brushes .right-brushes {
+  text-align: left;
+  width: 40%;
+  padding: 20px;
+}
+
+.main section.container-full-width .painting-tool .brushes .right-brushes h3 {
+  font-weight: 500;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.main section.container-full-width .painting-tool .brushes .right-brushes p {
+  font-weight: 400;
+}
+
+.main .second-img-fixed {
+  height: 500px;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main .effects {
+  text-align: center;
+  background-color: white;
+  height: 600px;
+}
+
+.main .effects h2 {
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 200px;
+}
+
+.main .effects .effect-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 400px;
+  padding: 30px 60px;
+}
+
+.main .effects .effect-list .effect {
+  width: calc(100% / 6);
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.main .effects .effect-list .effect img {
+  max-width: 100%;
+  transition: 1s ease-in-out;
+}
+
+.main .effects .effect-list .effect img:hover {
+  transform: scale(1.1);
+}
+
+.main .effects .effect-list .effect h4 {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+footer {
+  background-color: #e6e6e6;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 60%;
+  background-color: #e6e6e6;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer li:first-child {
+  color: #101010;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer li {
+  color: #333;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+.footer li .icon-social {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+}
+
+.footer li .icon-social i {
+  font-size: 1.5em;
 }
 

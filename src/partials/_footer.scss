@@ -1,0 +1,42 @@
+// FOOTER
+
+footer {
+    background-color: $lightgrey;
+}
+
+.footer {
+    @include flex(row,space-between,flex-start,wrap);
+    width: $cont60;
+    background-color: $lightgrey;
+    margin: $marg0auto;
+    padding: 50px;
+
+    ul {
+        list-style: none;
+    }
+
+    li:first-child{
+        color: $black;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    li {
+        color: $greyfooterlist;
+        padding: 10px;
+        font-size: 0.9em;
+
+        .icon-social {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            margin: 0 10px;
+
+            i {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+
+}

@@ -6,58 +6,6 @@
 @import 'partials/main';
 @import 'partials/footer';
 
-// MAIN
-
-.main {
-
-    @include img('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg',cover, center);
-    
-    .jumbo {
-        width: 56%;
-        height: 450px;
-        margin: $marg0auto;
-        @include flex(row,flex-end,center,nowrap);
-
-        .jumbo-left {
-            color: $white;
-            width: 45%;
-            height: 80%;
-            @include flex(column,space-between,flex-start,nowrap);
-
-            h2 {
-                font-size: 1.8em;
-                font-weight: $fontWeig400;
-            }
-
-            h3 {
-                font-size: 1.5em;
-                font-weight: $fontWeig400;
-            }
-
-            ul {
-                list-style-type: none;
-            }
-
-            li {
-                margin-bottom: 10px;
-                font-weight: $fontWeig400;
-            }
-
-            span {
-                color: $grey;
-                margin: 5px;
-            }
-        }
-
-        .jumbo-right {
-            width: 35%;
-            height: 90%;
-            background-color: green;
-        }
-    }
-
-}
-
 
 
 

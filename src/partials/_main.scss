@@ -1,0 +1,313 @@
+// MAIN
+
+.main {
+
+    height: 450px;
+
+    @include img('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg',cover, center);
+    
+    .jumbo {
+        width: 56%;
+        height: 450px;
+        margin: $marg0auto;
+        @include flex(row,flex-end,center,nowrap);
+
+        .jumbo-left {
+            color: $white;
+            width: 45%;
+            height: 80%;
+            margin-right: 53px;
+            @include flex(column,space-between,flex-start,nowrap);
+
+            h2 {
+                font-size: 1.8em;
+                font-weight: $fontWeig400;
+            }
+
+            h3 {
+                font-size: 1.5em;
+                font-weight: $fontWeig400;
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
+            li {
+                margin-bottom: 10px;
+                font-weight: $fontWeig400;
+            }
+
+            span {
+                color: $grey;
+                margin: 5px;
+            }
+
+            button {
+                @include but(200px,10px 20px,1em,$grey,$white,0,0);
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        .jumbo-right {
+            @include flex(column,center,flex-start,nowrap);
+            width: 35%;
+            height: 90%;
+            background-color: $black;
+            padding: 10px;
+
+            .jumbo-price {
+                width: 100%;
+                @include flex(row,space-between,center,wrap);
+                height: 30%;
+                padding: 20px;
+
+                .jumbo-money {
+                    height: 100%;
+                    @include flex(column,space-around,flex-start,nowrap);
+
+                    h3 {
+                        color: $white;
+                        font-size: 1.5em;
+                    }
+
+                    h4 {
+                        color: $grey;
+                        font-size: 1em;
+                        font-weight: 300;
+                    }
+                }
+
+                button {
+                    @include but(50%,10px 20px,1.2em,$blue,$white,0,0);
+    
+                    &:hover {
+                        opacity:(0.8);
+                    }
+                }
+            }
+
+            .jumbo-limited {
+                margin: 90px auto;
+                width: 90%;
+                background-color: $lightgrey;
+                padding: 10px;
+
+                h3 {
+                    font-size: 1.2em;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 0.8em;
+                    font-weight: 300;
+                }
+
+                span {
+                    font-size: 0.9em;
+
+                    a {
+                        text-decoration: none;
+                        color: $lightblue;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-second {
+        height: 75px;
+        background-color: $lightgrey;
+        @include flex(row,flex-start,center,nowrap);
+
+        .entry-navbar {
+            width: $cont60;
+            height: 100%;
+            margin: $marg0auto;
+
+            ul {
+                height: 100%;
+                list-style: none;
+                @include flex(row,flex-start,center,nowrap);
+            }
+    
+            li {
+                font-size: 1.2em;
+                color: $grey;
+                display: inline-block;
+                padding: 10px;
+                margin-right: 20px;
+
+                &:hover {
+                    color: $black;
+                    background-color: $white;
+                }
+            }
+
+        }
+
+        
+    }
+
+    .first-img-fixed {
+        height: 500px;
+        @include img("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg",cover,center);
+        background-attachment: fixed;
+    }
+
+    section.container-full-width {
+        background-color: $lightblack;
+        padding: 75px 0;
+
+        .painting-tool {
+            color: $white;
+            @include flex(column,space-between,center,nowrap);
+            height: 2000px;
+            text-align: center;
+    
+            .flexible-photo {
+                width: $cont60;
+                
+    
+                h2 {
+                    font-size: 2.8em;
+                    font-weight: 300;
+                }
+    
+                p {
+                    margin: 60px 0;
+                }
+
+                img {
+                    max-width: 80%;
+                    max-height: 60%;
+                }
+                
+            }
+    
+            
+            .blank-canvas {
+                @include flex(row,space-between,center,nowrap);
+                width: $cont60;
+
+                .left-blank-canvas {
+                    text-align: left;
+                    width: 40%;
+                    padding: 20px;
+
+                    h3 {
+                        font-weight: 500;
+                        font-size: 2em;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        font-weight: 400;
+                    }
+
+
+                }
+
+                .right-black-canvas {
+                    width: 60%;
+                    padding: 20px;
+
+                    img {
+                        max-width: 100%;
+                        min-height: 100%;
+                    }
+                }
+            }
+
+            .brushes {
+                @include flex(row,space-between,center,nowrap);
+                width: $cont60;
+
+                .left-brushes {
+                    width: 60%;
+                    padding: 20px;
+
+                    img {
+                        max-width: 100%;
+                        min-height: 100%;
+                    }
+                }
+
+                .right-brushes {
+                    text-align: left;
+                    width: 40%;
+                    padding: 20px;
+
+                    h3 {
+                        font-weight: 500;
+                        font-size: 2em;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        font-weight: 400;
+                    }
+                }
+
+            }
+
+    
+        }
+
+    }
+
+    .second-img-fixed {
+        height: 500px;
+        @include img("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg",cover,center);
+        background-attachment: fixed;
+    }
+
+    .effects {
+        text-align: center;
+        background-color: $white;
+        height: 600px;
+
+        h2 {
+            font-weight: 400;
+            font-size: 2em;
+            line-height: 200px;
+        }
+
+        .effect-list {
+            @include flex(row,space-evenly,center,wrap);
+            height: 400px;
+            padding: 30px 60px;
+
+            .effect {
+                width: calc(100% / 6);
+                height: 80%;
+                overflow: hidden;
+                position: relative;
+                cursor: $cursorp;
+
+                img {
+                    max-width: 100%;
+                    transition: 1s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    } 
+                }
+
+                h4 {
+                    color: $white;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 50%;
+                    transform: translate(-50%);
+                }
+            }
+        }
+    }
+
+    
+
+}

@@ -13,3 +13,14 @@
     background-size: $size;
     background-position: $pos;
 }
+
+@mixin but($width,$padd,$fsize,$bgc,$color,$borrad,$border) {
+    width: $width;
+    color: $color;
+    background-color: $bgc;
+    font-size: $fsize;
+    padding: $padd;
+    border-radius: $borrad;
+    border: $border;
+    cursor: $cursorp;
+} 
